@@ -57,6 +57,8 @@ $(document).ready(function(){
 
   if (dados) {
     populaTabela()
+  } else {
+    dados = []
   }
   
   //EVENTO CLICK DO BOTÃO SALVAR
