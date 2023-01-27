@@ -53,7 +53,7 @@ function populaTabela() {
 //EXECUTA AO CARREGAR A TELA
 $(document).ready(function(){
   
-  dados = localStorage.getItem("__dados__") ? JSON.parse(localStorage.getItem("__dados__"))
+  dados = JSON.parse(localStorage.getItem("__dados__"))
 
   if (dados) {
     populaTabela()
