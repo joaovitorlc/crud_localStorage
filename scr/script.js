@@ -53,7 +53,7 @@ function populaTabela() {
 //EXECUTA AO CARREGAR A TELA
 $(document).ready(function(){
   
-  dados = JSON.parse(localStorage.getItem("__dados__"))
+  dados = localStorage.getItem("__dados__") ? JSON.parse(localStorage.getItem("__dados__"))
 
   if (dados) {
     populaTabela()
@@ -76,7 +76,7 @@ $(document).ready(function(){
     registro.Formacao = Formacao
 
     if(!_id || _id == "0"){
-      registro.ID = dados.length + 1;
+      registro.ID = dados? dados.length + 1:1;
       dados.push(registro)
     } else {
       dados.forEach(function(item) {
