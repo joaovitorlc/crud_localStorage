@@ -51,7 +51,7 @@ function populaTabela() {
 }
 
 //EXECUTA AO CARREGAR A TELA
-$(function () {
+$( document ).ready(function() {
   
   dados = JSON.parse(localStorage.getItem("__dados__"))
 
