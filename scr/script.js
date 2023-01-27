@@ -89,7 +89,6 @@ $(function () {
       })
     }
 
-
     alert("Registro salvo com sucesso!")
     $("#modalRegistro").modal("hide")
 
